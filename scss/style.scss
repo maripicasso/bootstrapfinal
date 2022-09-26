@@ -1,0 +1,485 @@
+@import "fuentes";
+@import "fondos";
+@import "colores";
+
+$subtitulos: (
+	color: $gris-clarito,
+	tamaño-fuente: 30px,
+	alineacion: center,
+	tipo-fuente: $font-nav
+	);
+
+@mixin flex-column-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+}
+
+@mixin fondo-transparente {
+	background: transparent;
+}
+
+@mixin padding ($p-arriba, $p-abajo, $p-derecha, $p-izquierda) {
+	padding-top: $p-arriba;
+	padding-bottom: $p-abajo;
+	padding-right: $p-derecha;
+	padding-left: $p-izquierda;
+}
+
+.boton-generico {
+	border-radius: 7px;
+	background-color: white;
+	width: 50%;
+	height: 40px;
+	color: black;
+	font-family: $font-nav;
+}
+
+.header, .footer {
+	background-image: $background-nav;
+}
+
+.nav-tabs {
+	margin: 15px 50px;
+	font-family: $font-nav;
+	.nav-item {
+		@include padding(0px, 0px, 3px, 3px);
+		.nav-link {
+			color: $amarillo-oscuro;
+			&:hover {
+				color: $blanco;
+			}
+		}
+		.active {
+			color: $gris-oscuro;
+			&:hover {
+				color: black;
+			}
+		}
+	}
+}
+
+.nombreBar {
+	@include flex-column-center;
+
+	h2 {
+		font-family: map-get($subtitulos, tipo-fuente);
+		a {
+			text-decoration: none;
+			color: map-get($subtitulos, color);
+		}
+	}
+}
+
+.carousel {
+	.carousel-indicators {
+		.indicador {
+			width: 100px;
+			height: 5px;
+			background-color: $blanco;
+		}
+	}
+	.carousel-control-prev {
+		.carousel-control-prev-icon {
+			width: 4rem;
+    		height: 80px;
+    	}
+	}
+	.carousel-control-next {
+		.carousel-control-next-icon {
+			width: 4rem;
+			height: 80px;
+		}
+	}
+}
+
+.ubicacion {
+	background-image: $background-negro;
+	.row {
+		justify-content: center;
+		div {
+			.card-ubicacion {
+				align-items: center;
+				@include fondo-transparente;
+				h3 {
+					font-family: map-get($subtitulos, tipo-fuente);
+					color:map-get($subtitulos, color);
+				}
+			}
+		}
+	}
+}
+
+.mediospago {
+	background-image: $background-negro;
+	.row {
+		justify-content: center;
+		div {
+			.card-pago {
+				@include fondo-transparente;
+				.card-body {
+					@include flex-column-center;
+					h3 {
+						font-family: map-get($subtitulos, tipo-fuente);
+						color: map-get($subtitulos, color);
+					}
+				}
+			}
+		}
+	}
+}
+
+.redes {
+	background-image: $background-negro;
+	.row {
+		div {
+			ul {
+				.list-group-item {
+					@include fondo-transparente;
+					color: $blanco;
+					&:hover {
+						font-weight: bold;
+						font-size: 20px;
+					}
+					a {
+						p {
+							flex-wrap: wrap;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.newsletter {
+	background-image: $background-negro;
+	.row {
+		justify-content: center;
+		div {
+			.newsletter-items {
+				@include flex-column-center;
+				.form-label {
+					color: $blanco;
+				}
+				button {
+					@extend .boton-generico;
+					background-color: $rosa-claro;
+					border: none;
+					color: $purpura;
+					&:hover {
+						background-color: $gris-clarito;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-nav {
+	margin: 15px 50px;
+	font-family: $font-nav;
+	.nav-item {
+		@include padding(0px, 0px, 3px, 3px);
+		.nav-link {
+			color: $amarillo-oscuro;
+			&:hover {
+				color: $blanco;
+			}
+		}
+		.active {
+			color: $gris-oscuro;
+			background-color: $blanco;
+			&:hover {
+				color: black;
+			}
+		}
+	}
+}
+
+.subtitulo {
+	@include flex-column-center;
+	background-image: $background-negro;
+	.row {
+		@include padding (40px,20px,0px,0px);
+		div {
+			h2 {
+				font-family: $font-nav;
+				display: flex;
+				justify-content: center;
+				color: $verde-agua;
+			}
+			p {
+				color: $blanco;
+				font-family: $font-gral;
+			}
+		}
+	}
+}
+
+.formulario-contacto {
+	background-image: $background-negro;
+	color: $blanco;
+	.row {
+		justify-content: center;
+		div {
+			.formulario-items {
+				padding-bottom: 20px;
+				div {
+					padding-bottom: 20px;
+					input:hover, select:hover, textarea:hover {
+						border: 2px solid $rosa-claro;
+					}
+					.checkEnviar {
+						padding-bottom: 0px;
+					}
+				}
+				.botonEnviar {
+					display: flex;
+					justify-content: center;	
+					button {
+						@extend .boton-generico;
+						background-color: $rosa-claro;
+						border: none;
+						&:hover {
+							background-color: $blanco;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.formulario-reservas {
+	background-image: $background-negro;
+	color: $blanco;
+	padding-bottom: 40px;
+	font-family: $font-gral;
+	.row {
+		padding-bottom: 20px;
+		justify-content: center;
+	}
+	.motivo {
+		.motivo-texto {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.motivo-opciones {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+	.cantidad {
+		div {
+			.row {
+				label {
+					display: flex;
+					justify-content: center;
+				}
+			}
+		}
+	}
+	.enviar-reserva {
+		div {
+			display: flex;
+			justify-content: center;
+			button {
+				@extend .boton-generico;
+				border: none;
+				background-color: $verde-agua;
+				&:hover {
+					background-color: $blanco;
+				}
+			}
+		}
+	}
+}
+
+.galeria {
+	padding: 50px;
+	background-image: $background-negro;
+	.row {
+		padding-bottom: 20px;
+		div {
+			display: flex;
+			justify-content: center;
+			.figure:hover {
+				transform: scale(1.2, 1.2);
+			}
+		}
+	}
+}
+
+.enviarFoto {
+	background-image: $background-negro;
+	color: $blanco;
+	font-family: $font-gral;
+	@include padding (20px, 40px, 20px, 20px);
+	.row {
+		flex-direction: column;
+		.carga-titulo {
+			display: flex;
+			justify-content: center;
+			padding-bottom: 20px;
+			h2 {
+				font-family: $font-nav;
+				color: $naranja;
+				font-size: 30px;
+			}
+		}
+		.carga-archivo {
+			margin: auto;
+			padding-bottom: 20px;
+		}
+		.botonGaleria {
+			display: flex;
+			justify-content: center;
+			margin: auto;
+			button {
+				@extend .boton-generico;
+				border: none;
+				background-color: $naranja;
+				&:hover {
+					color: $blanco;
+				}
+			}
+		}
+	}
+}
+
+.fotosCarta {
+	background-image: $background-negro;
+	@include padding (30px, 30px, 10px, 10px);
+	.row {
+		div {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+
+.carta {
+	background-image: $background-negro;
+	padding-bottom: 30px;
+	.row {
+		div {
+			@include padding (0px, 0px, 40px, 40px);
+			.table {
+				color: $blanco;
+				thead {
+					tr {
+						.precio {
+							text-align: end;
+						}
+					}
+				}
+				tbody {
+					tr {
+						.precio {
+							text-align: end;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.delivery {
+	background-image: $background-negro;
+	padding-bottom: 40px;
+	div {
+		color: $naranja;
+		font-size: 35px;
+		font-family: $font-nav;
+		@include flex-column-center;
+		&:hover {
+		transform: scale(1.2,1.2);
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.header {
+		background-size: cover;
+		.row {
+			.header-nav {
+				.nav-tabs {
+					justify-content: space-evenly;
+				}
+			}
+			.nombreBar {
+				padding-bottom: 15px;
+			}
+		}
+	}
+
+	.principal {
+		.row {
+			height: 200px;
+			div {
+				.carousel {
+					.carousel-inner {
+						.carousel-item {
+							height: 200px;
+							img {
+								height: 200px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.ubicacion {
+		.row {
+			div {
+				.card-ubicacion {
+					h3 {
+						flex-wrap: wrap;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	.list-redes {
+		flex-direction: column;
+		.item-redes {
+			flex-direction: column;
+		}
+	}
+
+	.subtitulo {
+		.row {
+			div {
+				p {
+					flex-wrap: wrap;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.formulario-reservas {
+		.fecha {
+			div {
+				padding-bottom: 20px;
+			}
+		}
+		.motivo {
+			.motivo-texto {
+				justify-content: center;
+			}
+			.motivo-opciones {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+}

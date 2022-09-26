@@ -1,0 +1,305 @@
+.boton-generico, .newsletter .row div .newsletter-items button, .formulario-contacto .row div .formulario-items .botonEnviar button, .formulario-reservas .enviar-reserva div button, .enviarFoto .row .botonGaleria button {
+  border-radius: 7px;
+  background-color: white;
+  width: 50%;
+  height: 40px;
+  color: black;
+  font-family: "Cinzel", sans-serif; }
+
+.header, .footer {
+  background-image: url(../assets/img/fondo1.png); }
+
+.nav-tabs {
+  margin: 15px 50px;
+  font-family: "Cinzel", sans-serif; }
+  .nav-tabs .nav-item {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 3px;
+    padding-left: 3px; }
+    .nav-tabs .nav-item .nav-link {
+      color: #F9DC05; }
+      .nav-tabs .nav-item .nav-link:hover {
+        color: #FFFFFF; }
+    .nav-tabs .nav-item .active {
+      color: #495057; }
+      .nav-tabs .nav-item .active:hover {
+        color: black; }
+
+.nombreBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .nombreBar h2 {
+    font-family: "Cinzel", sans-serif; }
+    .nombreBar h2 a {
+      text-decoration: none;
+      color: #DDEEEE; }
+
+.carousel .carousel-indicators .indicador {
+  width: 100px;
+  height: 5px;
+  background-color: #FFFFFF; }
+
+.carousel .carousel-control-prev .carousel-control-prev-icon {
+  width: 4rem;
+  height: 80px; }
+
+.carousel .carousel-control-next .carousel-control-next-icon {
+  width: 4rem;
+  height: 80px; }
+
+.ubicacion {
+  background-image: url(../assets/img/bg-negro.jpg); }
+  .ubicacion .row {
+    justify-content: center; }
+    .ubicacion .row div .card-ubicacion {
+      align-items: center;
+      background: transparent; }
+      .ubicacion .row div .card-ubicacion h3 {
+        font-family: "Cinzel", sans-serif;
+        color: #DDEEEE; }
+
+.mediospago {
+  background-image: url(../assets/img/bg-negro.jpg); }
+  .mediospago .row {
+    justify-content: center; }
+    .mediospago .row div .card-pago {
+      background: transparent; }
+      .mediospago .row div .card-pago .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .mediospago .row div .card-pago .card-body h3 {
+          font-family: "Cinzel", sans-serif;
+          color: #DDEEEE; }
+
+.redes {
+  background-image: url(../assets/img/bg-negro.jpg); }
+  .redes .row div ul .list-group-item {
+    background: transparent;
+    color: #FFFFFF; }
+    .redes .row div ul .list-group-item:hover {
+      font-weight: bold;
+      font-size: 20px; }
+    .redes .row div ul .list-group-item a p {
+      flex-wrap: wrap;
+      text-align: center; }
+
+.newsletter {
+  background-image: url(../assets/img/bg-negro.jpg); }
+  .newsletter .row {
+    justify-content: center; }
+    .newsletter .row div .newsletter-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .newsletter .row div .newsletter-items .form-label {
+        color: #FFFFFF; }
+      .newsletter .row div .newsletter-items button {
+        background-color: #D49E95;
+        border: none;
+        color: #340E37; }
+        .newsletter .row div .newsletter-items button:hover {
+          background-color: #DDEEEE; }
+
+.footer-nav {
+  margin: 15px 50px;
+  font-family: "Cinzel", sans-serif; }
+  .footer-nav .nav-item {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 3px;
+    padding-left: 3px; }
+    .footer-nav .nav-item .nav-link {
+      color: #F9DC05; }
+      .footer-nav .nav-item .nav-link:hover {
+        color: #FFFFFF; }
+    .footer-nav .nav-item .active {
+      color: #495057;
+      background-color: #FFFFFF; }
+      .footer-nav .nav-item .active:hover {
+        color: black; }
+
+.subtitulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/img/bg-negro.jpg); }
+  .subtitulo .row {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px; }
+    .subtitulo .row div h2 {
+      font-family: "Cinzel", sans-serif;
+      display: flex;
+      justify-content: center;
+      color: #4AE7B3; }
+    .subtitulo .row div p {
+      color: #FFFFFF;
+      font-family: monospace; }
+
+.formulario-contacto {
+  background-image: url(../assets/img/bg-negro.jpg);
+  color: #FFFFFF; }
+  .formulario-contacto .row {
+    justify-content: center; }
+    .formulario-contacto .row div .formulario-items {
+      padding-bottom: 20px; }
+      .formulario-contacto .row div .formulario-items div {
+        padding-bottom: 20px; }
+        .formulario-contacto .row div .formulario-items div input:hover, .formulario-contacto .row div .formulario-items div select:hover, .formulario-contacto .row div .formulario-items div textarea:hover {
+          border: 2px solid #D49E95; }
+        .formulario-contacto .row div .formulario-items div .checkEnviar {
+          padding-bottom: 0px; }
+      .formulario-contacto .row div .formulario-items .botonEnviar {
+        display: flex;
+        justify-content: center; }
+        .formulario-contacto .row div .formulario-items .botonEnviar button {
+          background-color: #D49E95;
+          border: none; }
+          .formulario-contacto .row div .formulario-items .botonEnviar button:hover {
+            background-color: #FFFFFF; }
+
+.formulario-reservas {
+  background-image: url(../assets/img/bg-negro.jpg);
+  color: #FFFFFF;
+  padding-bottom: 40px;
+  font-family: monospace; }
+  .formulario-reservas .row {
+    padding-bottom: 20px;
+    justify-content: center; }
+  .formulario-reservas .motivo .motivo-texto {
+    display: flex;
+    justify-content: flex-end; }
+  .formulario-reservas .motivo .motivo-opciones {
+    display: flex;
+    justify-content: space-around; }
+  .formulario-reservas .cantidad div .row label {
+    display: flex;
+    justify-content: center; }
+  .formulario-reservas .enviar-reserva div {
+    display: flex;
+    justify-content: center; }
+    .formulario-reservas .enviar-reserva div button {
+      border: none;
+      background-color: #4AE7B3; }
+      .formulario-reservas .enviar-reserva div button:hover {
+        background-color: #FFFFFF; }
+
+.galeria {
+  padding: 50px;
+  background-image: url(../assets/img/bg-negro.jpg); }
+  .galeria .row {
+    padding-bottom: 20px; }
+    .galeria .row div {
+      display: flex;
+      justify-content: center; }
+      .galeria .row div .figure:hover {
+        transform: scale(1.2, 1.2); }
+
+.enviarFoto {
+  background-image: url(../assets/img/bg-negro.jpg);
+  color: #FFFFFF;
+  font-family: monospace;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px; }
+  .enviarFoto .row {
+    flex-direction: column; }
+    .enviarFoto .row .carga-titulo {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px; }
+      .enviarFoto .row .carga-titulo h2 {
+        font-family: "Cinzel", sans-serif;
+        color: #F3C070;
+        font-size: 30px; }
+    .enviarFoto .row .carga-archivo {
+      margin: auto;
+      padding-bottom: 20px; }
+    .enviarFoto .row .botonGaleria {
+      display: flex;
+      justify-content: center;
+      margin: auto; }
+      .enviarFoto .row .botonGaleria button {
+        border: none;
+        background-color: #F3C070; }
+        .enviarFoto .row .botonGaleria button:hover {
+          color: #FFFFFF; }
+
+.fotosCarta {
+  background-image: url(../assets/img/bg-negro.jpg);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 10px; }
+  .fotosCarta .row div {
+    display: flex;
+    justify-content: center; }
+
+.carta {
+  background-image: url(../assets/img/bg-negro.jpg);
+  padding-bottom: 30px; }
+  .carta .row div {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 40px;
+    padding-left: 40px; }
+    .carta .row div .table {
+      color: #FFFFFF; }
+      .carta .row div .table thead tr .precio {
+        text-align: end; }
+      .carta .row div .table tbody tr .precio {
+        text-align: end; }
+
+.delivery {
+  background-image: url(../assets/img/bg-negro.jpg);
+  padding-bottom: 40px; }
+  .delivery div {
+    color: #F3C070;
+    font-size: 35px;
+    font-family: "Cinzel", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .delivery div:hover {
+      transform: scale(1.2, 1.2); }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    background-size: cover; }
+    .header .row .header-nav .nav-tabs {
+      justify-content: space-evenly; }
+    .header .row .nombreBar {
+      padding-bottom: 15px; }
+  .principal .row {
+    height: 200px; }
+    .principal .row div .carousel .carousel-inner .carousel-item {
+      height: 200px; }
+      .principal .row div .carousel .carousel-inner .carousel-item img {
+        height: 200px; }
+  .ubicacion .row div .card-ubicacion h3 {
+    flex-wrap: wrap;
+    text-align: center; }
+  .list-redes {
+    flex-direction: column; }
+    .list-redes .item-redes {
+      flex-direction: column; }
+  .subtitulo .row div p {
+    flex-wrap: wrap;
+    text-align: center; }
+  .formulario-reservas .fecha div {
+    padding-bottom: 20px; }
+  .formulario-reservas .motivo .motivo-texto {
+    justify-content: center; }
+  .formulario-reservas .motivo .motivo-opciones {
+    flex-direction: column;
+    align-items: center; } }
